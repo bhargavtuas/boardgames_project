@@ -1,0 +1,4 @@
+{% for game in games %}
+    <p>{{ game.name }}</p>
+    <a href="{% url 'boardgames:borrow_game' game.id %}">Borrow</a>
+{% endfor %}
